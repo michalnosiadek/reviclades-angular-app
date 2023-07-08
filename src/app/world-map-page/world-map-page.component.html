@@ -1,3 +1,4 @@
+<!-- world-map-page.component.html -->
 <div id="mySidebarLeft" class="sidebar left">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNavLeft()">×</a>
   <input
@@ -94,7 +95,7 @@
         type="radio"
         name="location"
         id="radio-button-left"
-        onclick="openNavLeft(); closeNavRight()"
+        (click)="openNavLeft(); closeNavRight()"
       />
     </div>
     <div class="radio-button-right-container">
@@ -103,7 +104,7 @@
         type="radio"
         name="location"
         id="radio-button-right"
-        onclick="openNavRight(); closeNavLeft()"
+        (click)="openNavRight(); closeNavLeft()"
       />
     </div>
     <div class="tooltip">

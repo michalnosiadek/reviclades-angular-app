@@ -1,6 +1,7 @@
+/* world-map.page.component.css */
 h1 {
-    color: red;
     padding: 1em 1em;
+    color: var(--revi-text);
 }
 
 body, html {
@@ -10,7 +11,7 @@ body, html {
 
 .container {
     width: 100%;
-    height: 100;
+    height: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -71,19 +72,17 @@ body, html {
     background-color: #444;
 }
 
-h2{
-    color: red;
-}
-
 #main {
     transition: margin .5s;
     padding: 16px;
-    background-image: url("Sword-Coast-Map_HighRes.jpg");
-  height: 100%; 
+    background-image: url("/assets/world-map.png");
+    height: 100%; 
+    width: 100%;
     overflow: visible;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 @media screen and (max-height: 450px) {
@@ -168,7 +167,6 @@ h2{
 
   .title {
     background-color: rgba(0, 0, 0, 0.315);
-    color: red;
     max-width: 170px; 
     padding: 10px;
   }

@@ -1,31 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
 :root {
-    --revi-light: 14191E   
-    --main-red: rgb(232, 69, 69);
-    --secondary-red: rgb(144, 55, 73);
-    --secondary-dark: rgb(83, 53, 74);
+  --revi-wheat-30: #FDE5C0;
+  --revi-wheat-100: #F7A82D;
+  --revicla-blue-100: #212C3B;
+  --revicla-blue-90: #37414F;
+
+  --revi-logo-6: #9AFFFF;
+  --revi-logo-5: #476C7C;
+  --revi-logo-4: #365E67;
+  --revi-logo-3: #364B5C;
+  --revi-logo-2: #233647;
+  --revi-logo-1: #182633;
+
+  --revi-text: #EBE6DC;
+  --revi-dark: #14191E;
+
+  --revi-l-ground: #A76638;
+  --revi-l-brown: #A65216;
+  --revi-brown: #593115;
+  --revi-light: #37D7E5;
+  --revi-aqua-blue: #04666F;
 }
+
 
 * {
     font-family: sans-serif;
-    color: EBE6DC 
 }
 
-[data-theme='dark'] {
-    --bg-color: rgb(43, 46, 74);
-    --text-color: EBE6DC;
-  }
-  
-  /* Set the default styles */
-  body {
-    background-color: var(--revi-light);
-    color: var(--text-color);
-  }
-  
-  /* Additional styling for dark mode */
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #14191E  ;
-      color: white;
-    }
-  }
+body {
+    background-color: var(--revi-dark);
+    color: var(--revi-text);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5em 15px;
+}

@@ -10,27 +10,27 @@ export class WorldMapPageComponent {
     const elem = document.getElementById('mySidebarLeft');
     const main = document.getElementById('main');
     if (elem) elem.style.width = '450px';
-    if (main) main.style.marginLeft = '450px';
+    if (main) main.style.transform = 'translateX(450px)';
   }
 
   closeNavLeft() {
     const elem = document.getElementById('mySidebarLeft');
     const main = document.getElementById('main');
     if (elem) elem.style.width = '0';
-    if (main) main.style.marginLeft = '0';
+    if (main) main.style.transform = 'translateX(0)';
   }
 
   openNavRight() {
     const elem = document.getElementById('mySidebarRight');
     const main = document.getElementById('main');
     if (elem) elem.style.width = '450px';
-    if (main) main.style.marginRight = '450px';
+    if (main) main.style.transform = 'translateX(-450px)';
   }
 
   closeNavRight() {
     const elem = document.getElementById('mySidebarRight');
     const main = document.getElementById('main');
     if (elem) elem.style.width = '0';
-    if (main) main.style.marginRight = '0';
+    if (main) main.style.transform = 'translateX(0)';
   }
 }
