@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --main-dark: rgb(43, 46, 74);
+    --revi-light: 14191E   
     --main-red: rgb(232, 69, 69);
     --secondary-red: rgb(144, 55, 73);
     --secondary-dark: rgb(83, 53, 74);
@@ -8,23 +8,24 @@
 
 * {
     font-family: sans-serif;
+    color: EBE6DC 
 }
 
 [data-theme='dark'] {
     --bg-color: rgb(43, 46, 74);
-    --text-color: white;
+    --text-color: EBE6DC;
   }
   
   /* Set the default styles */
   body {
-    background-color: var(--bg-color);
+    background-color: var(--revi-light);
     color: var(--text-color);
   }
   
   /* Additional styling for dark mode */
   @media (prefers-color-scheme: dark) {
     body {
-      background-color: rgb(43, 46, 74);
+      background-color: #14191E  ;
       color: white;
     }
   }

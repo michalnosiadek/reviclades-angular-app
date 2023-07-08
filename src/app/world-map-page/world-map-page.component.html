@@ -1,1 +1,117 @@
-<p>world-map-page works!</p>
+<div id="mySidebarLeft" class="sidebar left">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavLeft()">×</a>
+  <input
+    type="radio"
+    name="location"
+    id="radio-button-right"
+    (click)="openNavRight(); closeNavLeft()"
+  />
+  <h1>Lorem, ipsum dolor.</h1>
+  <p class="nav-content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad modi
+    nostrum sit, accusamus recusandae esse! Blanditiis vel fugiat explicabo
+    reprehenderit commodi nulla? Nisi rem earum ducimus sapiente sunt et.
+  </p>
+  <img src="https://picsum.photos/200/300" alt="" class="nav-content" />
+</div>
+<div id="mySidebarRight" class="sidebar right">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNavRight()">×</a>
+  <input
+    type="radio"
+    name="location"
+    id="radio-button-left"
+    (click)="openNavLeft(); closeNavRight()"
+  />
+  <h1>Lorem, ipsum dolor.</h1>
+
+  <p class="nav-content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad modi
+    nostrum sit, accusamus recusandae esse! Blanditiis vel fugiat explicabo
+    reprehenderit commodi nulla? Nisi rem earum ducimus sapiente sunt et.
+  </p>
+  <div class="cards">
+    <article class="card">
+      <header>
+        <h2>Lorem, ipsum dolor.</h2>
+      </header>
+      <img src="https://picsum.photos/id/684/600/400" alt="" />
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius rem
+          eos reiciendis deserunt iure consectetur cupiditate corporis quis,
+          optio, aliquam facere! Rem voluptatibus iste nobis aliquam saepe! Eos,
+          excepturi.
+        </p>
+      </div>
+    </article>
+
+    <article class="card">
+      <header>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+      </header>
+      <img src="https://picsum.photos/id/683/600/400" alt="" />
+      <div class="content">
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+      <footer>Lorem, ipsum.</footer>
+    </article>
+
+    <article class="card">
+      <header>
+        <h2>Lorem, ipsum dolor.</h2>
+      </header>
+      <img src="https://picsum.photos/id/682/600/400" alt="" />
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          fugiat enim esse quae assumenda? Corporis, explicabo id. Error,
+          aspernatur porro.
+        </p>
+      </div>
+      <footer>Lorem ipsum dolor sit amet.</footer>
+    </article>
+    <article class="card">
+      <header>
+        <h2>Lorem.</h2>
+      </header>
+      <img src="https://picsum.photos/id/681/600/400" alt="" />
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore
+          ullam aspernatur sint amet culpa.
+        </p>
+      </div>
+    </article>
+  </div>
+</div>
+
+<div id="main">
+  <div class="container">
+    <h1 class="title">World Map</h1>
+    <div class="radio-button-left-container">
+      <label for="radio-button-left">left small</label>
+      <input
+        type="radio"
+        name="location"
+        id="radio-button-left"
+        onclick="openNavLeft(); closeNavRight()"
+      />
+    </div>
+    <div class="radio-button-right-container">
+      <label for="radio-button-right">right big</label>
+      <input
+        type="radio"
+        name="location"
+        id="radio-button-right"
+        onclick="openNavRight(); closeNavLeft()"
+      />
+    </div>
+    <div class="tooltip">
+      Tooltip
+      <span class="tooltiptext"
+        ><img src="https://picsum.photos/id/684/300/300" alt="" />
+        <h3>Lorem ipsum dolor sit amet.</h3></span
+      >
+    </div>
+  </div>
+</div>
