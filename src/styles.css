@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@1;200;500&display=swap');
 /* styles.css */
 :root {
   --revi-wheat-30: #FDE5C0;
@@ -13,6 +14,7 @@
   --revi-logo-1: #182633;
 
   --revi-text: #EBE6DC;
+  --revi-hover: #ebc374;
   --revi-dark: #14191E;
 
   --revi-l-ground: #A76638;
@@ -22,22 +24,69 @@
   --revi-aqua-blue: #04666F;
 }
 
-
-* {
-    font-family: sans-serif;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--revi-dark);
+  text-decoration: none;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
 }
 
-body {
-    background-color: var(--revi-dark);
-    color: var(--revi-text);
-    height: 100%;
-    margin: 0;
-    padding: 0;
+li, a, button {
+  color: var(--revi-text);
 }
 
-.container-fluid {
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3em 10%;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 5em 15px;
+  height: auto;
+}
+
+.logo{
+  cursor: pointer;
+  height: auto;
+  height: 3vw;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style:none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  font-size: 1.2em;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: var(--revi-hover);
+}
+
+button {
+  padding: 0.5em 3em;
+  font-size: 1.2em;
+  background-color: rgba(247, 168, 45, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: var(--revi-dark);
+  margin-left: 2em;
+}
+
+button:hover {
+  background-color: rgba(247, 168, 45, 0.8);
+}
+
+.cta button {
+  color: var(--revi-dark)
 }

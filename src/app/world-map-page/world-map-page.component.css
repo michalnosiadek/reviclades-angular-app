@@ -1,12 +1,22 @@
-/* world-map.page.component.css */
+/* world-map-page.component.css */
 h1 {
-    padding: 1em 1em;
+    width: 50%;
+    margin: auto;
     color: var(--revi-text);
 }
 
 body, html {
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    background-image: url('/assets/world-map.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -71,6 +81,21 @@ body, html {
 .openbtn:hover {
     background-color: #444;
 }
+html
+{
+ margin:0px;
+ height:100%;
+ width:100%;
+ background:url('/assets/world-map.png')no-repeat center center fixed; 
+ -webkit-background-size:cover;
+ -o-background-size:cover;
+ -moz-background-size:cover;
+ background-size:cover;
+}
+body
+{
+ /*no other attributes required for a full screen background image*/
+}
 
 #main {
     transition: margin .5s;
@@ -81,7 +106,7 @@ body, html {
     overflow: visible;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
 }
 

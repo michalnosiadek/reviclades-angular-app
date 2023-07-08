@@ -1,22 +1,38 @@
-<!-- navbar.component.html -->
-<nav class="navbar container-fluid">
-  <div class="logo">
-    <img src="assets/logo.png" alt="Reviclades logo" height="40px" />
-  </div>
-  <ul>
-    <li>
-      <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page"
-        >Home
-      </a>
-    </li>
-    <li>
-      <a
-        routerLink="/world-map"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        >World Map
-      </a>
-    </li>
-  </ul>
-</nav>
-<nav></nav>
+<header>
+  <img src="/assets/logo.svg" alt="logo" class="logo" />
+
+  <nav>
+    <ul class="nav-links">
+      <li>
+        <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="world-map"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >World Map</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="card-library"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Card Library</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="about"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >About</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <a class="cta" href="#"><button>Join Discord</button></a>
+</header>

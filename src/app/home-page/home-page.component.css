@@ -1,1 +1,39 @@
-/* home-page.component.css */
+.header {
+    background-color: var(--revi-dark);
+    padding: 20px;
+    text-align: center;
+    color: var(--revi-text);
+    text-align: center;
+    align-items: center;
+
+  }
+  
+  .main-section {
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    background-color: var(--revi-wheat-30);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .footer {
+    background-color: var(--revi-dark);
+    padding: 20px;
+    text-align: center;
+    color: var(--revi-text);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
