@@ -96,3 +96,94 @@ button:hover {
 .cta button {
   color: var(--revi-dark)
 }
+
+/* bootstrap */
+/* Bootstrap's 'd-flex' class */
+.d-flex {
+  display: flex;
+}
+
+/* Bootstrap's 'justify-content-center' class */
+.justify-content-center {
+  justify-content: center;
+}
+
+/* Bootstrap's 'align-items-center' class */
+.align-items-center {
+  align-items: center;
+}
+
+/* Bootstrap's 'align-self-center' class */
+.align-self-center {
+  align-self: center;
+}
+
+/* Bootstrap's 'position-relative' class */
+.position-relative {
+  position: relative;
+}
+
+/* Bootstrap's 'position-absolute' class */
+.position-absolute {
+  position: absolute;
+}
+
+/* Bootstrap's 'text-center' class */
+.text-center {
+  text-align: center;
+}
+
+/* Bootstrap's 'justify-content-end' class */
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+/* Bootstrap's 'd-none' class */
+.d-none {
+  display: none;
+}
+
+/* Bootstrap's 'd-md-block' class for medium devices */
+@media (min-width: 768px) {
+  .d-md-block {
+    display: block;
+  }
+}
+
+/* Bootstrap's 'mt-5' class */
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* Bootstrap's 'pt-5' class */
+.pt-5 {
+  padding-top: 3rem;
+}
+
+/* Bootstrap's 'm-2' class */
+.m-2 {
+  margin: 0.5rem;
+}
+
+/* Bootstrap's 'p-3' class */
+.p-3 {
+  padding: 1rem;
+}
+
+/* Bootstrap's 'pb-3' class */
+.pb-3 {
+  padding-bottom: 1rem;
+}
+
+/* Bootstrap's 'mb-3' class */
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+/* Bootstrap's 'text-white' class */
+.text-white {
+  color: #fff;
+}
+
+/* Bootstrap's 'bg-body-tertiary' class */
+/* Change the color to match your theme */
