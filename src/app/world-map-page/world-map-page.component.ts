@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-world-map-page',
@@ -6,31 +6,51 @@ import { Component } from '@angular/core';
   styleUrls: ['./world-map-page.component.css'],
 })
 export class WorldMapPageComponent {
+  @ViewChild('mySidebarLeft') mySidebarLeft!: ElementRef;
+  @ViewChild('mySidebarRight') mySidebarRight!: ElementRef;
+  @ViewChild('main') main!: ElementRef;
+
+  constructor(private renderer: Renderer2) {}
+
   openNavLeft() {
-    const elem = document.getElementById('mySidebarLeft');
-    const main = document.getElementById('main');
-    if (elem) elem.style.width = '450px';
-    if (main) main.style.transform = 'translateX(450px)';
+    this.renderer.setStyle(this.mySidebarLeft.nativeElement, 'width', '450px');
+    this.renderer.setStyle(
+      this.main.nativeElement,
+      'transform',
+      'translateX(450px)'
+    );
   }
 
   closeNavLeft() {
-    const elem = document.getElementById('mySidebarLeft');
-    const main = document.getElementById('main');
-    if (elem) elem.style.width = '0';
-    if (main) main.style.transform = 'translateX(0)';
+    this.renderer.setStyle(this.mySidebarLeft.nativeElement, 'width', '0');
+    this.renderer.setStyle(
+      this.main.nativeElement,
+      'transform',
+      'translateX(0)'
+    );
   }
 
   openNavRight() {
-    const elem = document.getElementById('mySidebarRight');
-    const main = document.getElementById('main');
-    if (elem) elem.style.width = '450px';
-    if (main) main.style.transform = 'translateX(-450px)';
+    this.renderer.setStyle(this.mySidebarRight.nativeElement, 'width', '450px');
+    this.renderer.setStyle(
+      this.main.nativeElement,
+      'transform',
+      'translateX(-450px)'
+    );
   }
 
   closeNavRight() {
-    const elem = document.getElementById('mySidebarRight');
-    const main = document.getElementById('main');
-    if (elem) elem.style.width = '0';
-    if (main) main.style.transform = 'translateX(0)';
+    this.renderer.setStyle(this.mySidebarRight.nativeElement, 'width', '0');
+    this.renderer.setStyle(
+      this.main.nativeElement,
+      'transform',
+      'translateX(0)'
+    );
+  }
+
+  onMapClick() {
+    // logic to decide whether to open left or right nav
+    // for example:
+    // this.openNavLeft();
   }
 }

@@ -1,12 +1,9 @@
-<!-- world-map-page.component.html -->
-<div id="mySidebarLeft" class="sidebar left">
+<div class="world-map-background" (click)="onMapClick()">
+  <!-- your other html elements -->
+</div>
+
+<div id="mySidebarLeft" class="sidebar left" #mySidebarLeft>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNavLeft()">×</a>
-  <input
-    type="radio"
-    name="location"
-    id="radio-button-right"
-    (click)="openNavRight(); closeNavLeft()"
-  />
   <h1>Lorem, ipsum dolor.</h1>
   <p class="nav-content">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ad modi
@@ -15,14 +12,9 @@
   </p>
   <img src="https://picsum.photos/200/300" alt="" class="nav-content" />
 </div>
-<div id="mySidebarRight" class="sidebar right">
+
+<div id="mySidebarRight" class="sidebar right" #mySidebarRight>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNavRight()">×</a>
-  <input
-    type="radio"
-    name="location"
-    id="radio-button-left"
-    (click)="openNavLeft(); closeNavRight()"
-  />
   <h1>Lorem, ipsum dolor.</h1>
 
   <p class="nav-content">
@@ -86,7 +78,7 @@
   </div>
 </div>
 
-<div id="main">
+<div id="main" #main>
   <div class="container">
     <h1 class="title">World Map</h1>
     <div class="radio-button-left-container">
@@ -95,7 +87,7 @@
         type="radio"
         name="location"
         id="radio-button-left"
-        (click)="openNavLeft(); closeNavRight()"
+        onclick="openNavLeft(); closeNavRight()"
       />
     </div>
     <div class="radio-button-right-container">
@@ -104,7 +96,7 @@
         type="radio"
         name="location"
         id="radio-button-right"
-        (click)="openNavRight(); closeNavLeft()"
+        onclick="openNavRight(); closeNavLeft()"
       />
     </div>
     <div class="tooltip">

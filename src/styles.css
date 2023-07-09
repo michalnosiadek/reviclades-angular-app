@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@1;200;500&display=swap');
 /* styles.css */
+
+
+
 :root {
   --revi-wheat-30: #FDE5C0;
   --revi-wheat-100: #F7A82D;
@@ -30,7 +33,11 @@
   padding: 0;
   background-color: var(--revi-dark);
   text-decoration: none;
-  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+}
+
+h1, p {
+  color: var(--revi-text);
 }
 
 li, a, button {
@@ -41,15 +48,14 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 3em 10%;
+  padding: 0.5em 10%;
   width: 100%;
   height: auto;
 }
 
 .logo{
   cursor: pointer;
-  height: auto;
-  height: 3vw;
+  height: 3.2VW;
   margin-right: auto;
 }
 
