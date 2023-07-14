@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@1;200;500&display=swap');
 /* styles.css */
 
-
-
 :root {
   --revi-wheat-30: #FDE5C0;
   --revi-wheat-100: #F7A82D;
@@ -27,163 +25,14 @@
   --revi-aqua-blue: #04666F;
 }
 
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: var(--revi-dark);
-  text-decoration: none;
+* {
   font-family: "Sofia Sans Semi Condensed", sans-serif;
 }
 
-h1, p {
-  color: var(--revi-text);
+.revi-dark-background {
+  background-color: var(--revi-dark) !important;
 }
 
-li, a, button {
-  color: var(--revi-text);
+.revi-wheat-background {
+  background-color: var(--revi-wheat-100)
 }
-
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0.5em 10%;
-  width: 100%;
-  height: auto;
-}
-
-.logo{
-  cursor: pointer;
-  height: 3.2VW;
-  margin-right: auto;
-}
-
-.nav-links {
-  list-style:none;
-}
-
-.nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav-links li a {
-  font-size: 1.2em;
-  transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-  color: var(--revi-hover);
-}
-
-button {
-  padding: 0.5em 3em;
-  font-size: 1.2em;
-  background-color: rgba(247, 168, 45, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  color: var(--revi-dark);
-  margin-left: 2em;
-}
-
-button:hover {
-  background-color: rgba(247, 168, 45, 0.8);
-}
-
-.cta button {
-  color: var(--revi-dark)
-}
-
-/* bootstrap */
-/* Bootstrap's 'd-flex' class */
-.d-flex {
-  display: flex;
-}
-
-/* Bootstrap's 'justify-content-center' class */
-.justify-content-center {
-  justify-content: center;
-}
-
-/* Bootstrap's 'align-items-center' class */
-.align-items-center {
-  align-items: center;
-}
-
-/* Bootstrap's 'align-self-center' class */
-.align-self-center {
-  align-self: center;
-}
-
-/* Bootstrap's 'position-relative' class */
-.position-relative {
-  position: relative;
-}
-
-/* Bootstrap's 'position-absolute' class */
-.position-absolute {
-  position: absolute;
-}
-
-/* Bootstrap's 'text-center' class */
-.text-center {
-  text-align: center;
-}
-
-/* Bootstrap's 'justify-content-end' class */
-.justify-content-end {
-  justify-content: flex-end;
-}
-
-/* Bootstrap's 'd-none' class */
-.d-none {
-  display: none;
-}
-
-/* Bootstrap's 'd-md-block' class for medium devices */
-@media (min-width: 768px) {
-  .d-md-block {
-    display: block;
-  }
-}
-
-/* Bootstrap's 'mt-5' class */
-.mt-5 {
-  margin-top: 3rem;
-}
-
-/* Bootstrap's 'pt-5' class */
-.pt-5 {
-  padding-top: 3rem;
-}
-
-/* Bootstrap's 'm-2' class */
-.m-2 {
-  margin: 0.5rem;
-}
-
-/* Bootstrap's 'p-3' class */
-.p-3 {
-  padding: 1rem;
-}
-
-/* Bootstrap's 'pb-3' class */
-.pb-3 {
-  padding-bottom: 1rem;
-}
-
-/* Bootstrap's 'mb-3' class */
-.mb-3 {
-  margin-bottom: 1rem;
-}
-
-/* Bootstrap's 'text-white' class */
-.text-white {
-  color: #fff;
-}
-
-/* Bootstrap's 'bg-body-tertiary' class */
-/* Change the color to match your theme */

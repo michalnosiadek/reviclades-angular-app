@@ -1,38 +1,39 @@
-<header>
-  <img src="/assets/logo.svg" alt="logo" class="logo" />
+<nav class="navbar navbar-expand-lg bg-body-tertiary revi-background m-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/logo.svg" alt="Reviclades" width="150" height="34" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">World Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Roadmap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Card Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Contact</a>
+        </li>
+      </ul>
 
-  <nav>
-    <ul class="nav-links">
-      <li>
-        <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page"
-          >Home</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="world-map"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-          >World Map</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="card-library"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-          >Card Library</a
-        >
-      </li>
-      <li>
-        <a
-          routerLink="about"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-          >About</a
-        >
-      </li>
-    </ul>
-  </nav>
-  <button class="cta">Join Discord</button>
-</header>
+      <button class="btn btn-outline-warning" type="submit">Sign up</button>
+    </div>
+  </div>
+</nav>
