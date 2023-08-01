@@ -1,1 +1,0 @@
-:root{--revi-light: rgb(43, 46, 74);--main-red: rgb(232, 69, 69);--secondary-red: rgb(144, 55, 73);--secondary-dark: rgb(83, 53, 74)}*{font-family:sans-serif}[data-theme=dark]{--bg-color: rgb(43, 46, 74);--text-color: white}body{background-color:var(--bg-color);color:var(--text-color)}@media (prefers-color-scheme: dark){body{background-color:#2b2e4a;color:#fff}}
